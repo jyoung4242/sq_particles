@@ -103,5 +103,6 @@ The goal of this module is to provide an easy abstraction interface to a entry l
     ### Content
     - /Particles/myParticle.ts
         - unique particle/emitter config
+            - myParticle system extends system class
             - myEmitter extends emitter class
             - myParticle extends particle class
