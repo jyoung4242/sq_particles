@@ -51,7 +51,17 @@ body {
     --current-neutral: var(--dark-neutral);
   }
 }
+.test {
+  transform: scale(4);
+  position: fixed;
+  top: 600px;
+  left: 600px;
+  width: 500px;
+  height: 500px;
+}
 
-pre {
-  color: #dddddd;
+body {
+  width: 500px;
+  height: 500px;
+  background-color: #5e676b;
 }
