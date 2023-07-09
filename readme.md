@@ -64,6 +64,8 @@ The goal of this module is to provide an easy abstraction interface to a entry l
             The Emitters will have the same fundamental properties of the systems, including additional properties,
             sprite-layers for spritesheet or static sprite images, also will have shape attribute for the particle generation region
 
+            There are 3 types of emitters: Point, Circle, and Square
+
     ### Particles
 
             The particles will have the same fundamental properties of the systems, including a transform set of properties that change over lifetime of particle from 0-1
