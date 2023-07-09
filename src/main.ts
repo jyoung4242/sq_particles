@@ -12,26 +12,15 @@ const PS = new myParticleSystem(Assets);
 
 const model = {
   psystems: PS,
-  fps: "",
 };
-const template = `<div class="test">
-  ${PS.template}
-  <div class="fps">FPS: \${fps} </div>
-</div>`;
+const template = `<div class="test"> ${PS.template} </div>`;
 await UI.create(document.body, model, template).attached;
 PS.createEmitter();
-let myNow: number;
 
 Engine.create({
   fps: 60,
   started: true,
   callback: (deltaTime: number, now: number) => {
-    //console.log(myNow, now);
-
-    if (myNow == undefined) myNow = now;
-    //model.fps = (1000 / deltaTime).toFixed(2);
-    model.fps = (1000 / (now - myNow)).toFixed(2);
     PS.update(deltaTime, now);
-    myNow = now;
   },
 });
