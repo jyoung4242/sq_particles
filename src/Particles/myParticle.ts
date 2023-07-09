@@ -53,7 +53,8 @@ export class myParticleEmitter extends ParticleEmitter {
     this.bubbleImage = particleimagesource;
     this.myInterval = setInterval(() => {
       this.createMyParticle();
-    }, 75);
+      this.createMyParticle();
+    }, 50);
   }
 
   createMyParticle(): void {
